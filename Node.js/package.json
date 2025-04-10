@@ -1,0 +1,17 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+                      "type": "module",         
+  "description": "this is my first node.js project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mayank Mishra",
+  "license": "ISC",
+  "devDependencies": {
+    "@fakerjs/superhero": "^1.2.0"
+  }
+  
+
+}
