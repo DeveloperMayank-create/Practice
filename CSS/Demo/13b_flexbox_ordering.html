@@ -1,0 +1,44 @@
+<!-- Higher value of order makes the box move to the right most side of Red box.
+Values,which are lower than Highest value will be left side of Right most side. -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Ordering</title>
+    <style>
+        ul{
+            border: 1px solid red;
+            margin: 0px;
+            padding: 0px;
+            width: 200px;
+            height: 200px;
+            list-style-type:none;
+            display: flex;
+            justify-content: space-around;
+        }
+        li{
+            border: 1px solid black;
+            margin: 0em;
+            padding: 0em;
+        }
+        .first{
+            order: 3;                       /*Higher value of Order will make thi box at right most side*/
+        }
+        .second{
+            order: 1;                       /*Lower value of Order*/
+        }
+        .third{
+            order:2 ;                       
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">1st</li>
+        <li class="second">2nd</li>
+        <li class="third">3rd</li>
+    </ul>
+</body>
+</html>

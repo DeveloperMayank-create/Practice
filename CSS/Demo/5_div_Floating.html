@@ -1,0 +1,61 @@
+<!--Float property is used for changing the direction of division -->
+<!--Clean Id and clear property is used for dispalying text below
+    the Divison not between the two Divisions -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Division positioning</title>
+    <style>
+        #first_section{
+            color: yellow;
+            background-color: blue;             /* simple Division */
+            font-size: 25px;
+        }
+        #second_section{
+            color:yellow;
+            background-color: blue;             /* Division with width and height*/
+            width: 100px;
+            height: 100px;
+        
+        }
+        #third_section{
+            color: yellow;
+            background-color: blue;
+            float: right;                        /* Divison with right side of page*/
+        }
+
+        .clear{
+            clear: both;                        /*Used to remove text between Divisions */
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <div id="first_section">
+        <h1>CSS is cool!</h1>
+    </div>
+
+    <div id="second_section">
+        <p>I am learning CSS</p>
+    </div>
+
+    <div id="third_section">
+        <p>I will learn it soon</p>
+    </div>
+
+    <p>hii these text will appear in between of two Division ,
+        to remove text between them we use the <b>clear</b> value
+    </p>
+    <hr>
+
+    <div class="clear">
+        <p>now this text will not be displayed between the 
+           division boxes as we used the Clear property but below the Divisions ,we can name the
+        class as <b>"clear"</b></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!-- By Flexbox ,we can make table boxes in rowwise or columnwise
+
+    (i) It is the advanced version of Position and Float property.
+    (ii) the direction of Flex is normally Row wise.
+    (iii) the direction of flex-direction is normally rowwise but 
+          we can set value as column.
+    (iv) Note ::: to understand complete (see under red line/red box)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        li{
+            border: 1px solid black;
+            margin: 0.5px;
+            padding: 0.5px;
+        }
+        .ul_first{
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;                /*can be Column also ; all boxes will display row-wise */
+        }
+        .ul_second{
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            
+            list-style-type: none;
+            display: flex;
+            flex-direction: column-reverse;     /*all boxes will display column-wise but reversed; can use row-reverse also*/
+        }
+        
+        .ul_third{
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;        /*can use flex-start, space-around(not uniform space)
+                                                  ,space-between(for uniform space) */
+        }
+        .ul_forth{
+            width: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;        /*can use space-around, space-around(not uniform space)
+                                                  ,space-between(for uniform space) */
+        }
+        .ul_fifth{
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            
+            list-style-type: none;
+            display: flex;
+            align-items: flex-end;        /*can display black boxes downside of red ;also value can be used as flex-start*/
+        }
+        .ul_sixth{
+            width: 200px;
+            height: 200px;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            
+            list-style-type: none;
+            display: flex;
+            align-items: stretch;        /*to strech the boxes to downside*/
+        }
+       .first{
+            order: 1;
+            flex-direction: row;                    /*(Error) by this high order value boxes will display first*/
+        }
+        .second{
+            order: 2; 
+            flex-direction: row;                    /*(Error) box with lower Order value will displayed later*/
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul_first">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul class="ul_second">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul class="ul_third">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul class="ul_forth">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul class="ul_fifth">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul class="ul_sixth">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+    </ul>
+    <br>
+    <ul>
+        <li class="first">1st</li>
+        <li class="second">2nd</li>
+    </ul>
+
+</body>
+</html>
