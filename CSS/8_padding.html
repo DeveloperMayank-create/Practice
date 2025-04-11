@@ -1,0 +1,81 @@
+<!--
+    Padding is similar to Margin but works inside of box.
+    It creates the space between text box
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Padding</title>
+    <style>
+        #none{
+            color: black;
+            background-color:red;
+            width: 200px;
+            height: 100px;
+
+            margin: 0px;
+            padding: 0px;
+        }
+        #first{
+            color: yellow;
+            background-color: blue;
+            width: 200px;
+            height: 100px;
+
+            padding: 20px;                      /*All sides 20px*/
+        }
+        #second{
+            color: green;
+            background-color: lightgreen;
+            width: 200px;
+            height: 100px;
+
+            padding: 20px 40px;                 /*top-bottom=20px left-right=40px*/
+        }
+        #third{
+            color: yellow;
+            background-color: blue;
+            width: 200px;
+            height: 100px;
+
+            padding: 20px 40px 60px 80px;
+        }
+        #fourth{
+            color: green;
+            background-color: lightgreen;
+            width: 200px;
+            height: 100px;
+
+            padding-left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="none">
+        <h2>Hello Mayank 0</h2>
+    </div>
+    <hr>
+
+    <div id="first">
+        <h2>Hello Mayank 1</h2>
+    </div>
+    <hr>
+
+    <div id="second">
+        <h2>Hello Mayank 2</h2>
+    </div>
+    <hr>
+
+    <div id="third">
+        <h2>Hello Mayank 3</h2>
+    </div>
+    <hr>
+
+    <div id="fourth">
+        <h2>Hello Mayank 4</h2>
+    </div>
+</body>
+</html>
