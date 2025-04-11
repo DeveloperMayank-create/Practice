@@ -1,0 +1,24 @@
+<!-- by accessing element ,we can acces and change any element .
+    Here we <p> tag have Hello mayank but due to javascript it is changed to Hii Mayank.
+    
+    document         = looking something in entire page
+    .                = tells we need to go within perticular section
+    getElementById() = get anything by id name
+    .innerHTML       = used to access the HTML content of an element by id
+    " Hii Mayank"    = New value ,that will be replaced with older one
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accessing Element</title>
+</head>
+<body>
+    <p id="text">Hello Mayank</p>
+    <script>
+        document.getElementById("text").innerHTML="Hii Mayank ";  // Hello Mayank has 
+                                                                  // been changed to Hii Mayank
+    </script>
+</body>
+</html>
