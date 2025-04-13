@@ -26,3 +26,27 @@ app.listen(3000,function(){
 app.get("/",function(req,res){
     res.send("Welcome Mayank");
 });
+
+
+
+
+
+
+
+//PART 4 - CREATION OF ROUTE
+
+//Search "localhost:3000/about" to see the changes
+//we just changed the parameters of get() function
+
+app.get("/about",function(req,res){
+    res.send("Welcome Mayank, it's a new route that is displaying");
+});
+app.get("/services", function(req,res){
+    res.send("This is services section of the website")
+});
+
+
+
+
+
+//PART 5 - SENDING HTML FILES TO SERVER
