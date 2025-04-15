@@ -1,4 +1,4 @@
-// JS is a programming language but it is more over a scripting language, script is a set of programming lines by which we can perform any task.
+// JS is a DYNAMICALLY TYPED programming language but it is more over a scripting language, script is a set of programming lines by which we can perform any task.
 // At begining it was client side language but after the C++ and JS integration it also became the server side language.
 // ECMA is an statnderd of building the set of rules and regulations of JS ,so it can provide the linear code everywhere .
 // Initially Moka was the name of JS then it became LiveScript and at last it became JavaScript.
