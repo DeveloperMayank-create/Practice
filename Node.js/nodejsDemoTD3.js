@@ -1,6 +1,6 @@
 //by this line various modules can be used
 //we want to change name of index.txt file to 
-//*** use import in place of require()
+//*(imp)*     use import in place of require()
 import fs from 'fs';
 
 
