@@ -50,3 +50,10 @@ app.get("/services", function(req,res){
 
 
 //PART 5 - SENDING HTML FILES TO SERVER
+
+//we use the sendFile() function and inside it we put the path of the file
+//we can use "__dirname + 'fileName' " to easily write the file path (double underscore)
+
+app.get("/indexFile", function(req,res){
+    res.sendFile(__dirname + "/index.html");
+});
